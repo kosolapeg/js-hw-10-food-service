@@ -1,11 +1,10 @@
 import './sass/styles.scss';
 import menuTemplate from './templates/menu.hbs';
+// import menu from './menu.json';
 
-import storage from './modules/storage';
-
-const menuData = {
-  title: 'Eat it createElement, templates rule!',
-  items: ['Handlebars', 'LoDash', 'Pug', 'EJS', 'lit-html'],
+const Theme = {
+  LIGHT: 'light-theme',
+  DARK: 'dark-theme',
 };
 
 const markup = menuTemplate(menuData);
